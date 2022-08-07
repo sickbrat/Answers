@@ -4,22 +4,16 @@ import java.util.Scanner;
 
 public class Average_Marks {
     public static void main(String[] args) {
+        int[] mark = new int[5];
+
+        long sum = 0, avg;
         Scanner sc = new Scanner(System.in);
-        int count = 0;
-        double[] array = new double[count];
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.print("Enter input number " + (i + 1) + ": ");
-            array[i] = sc.nextDouble();
+        System.out.print("Enter marks for 5 Subjects: ");
+        for (int i = 0; i < mark.length; i++) {
+            mark[i] = sc.nextInt();
+            sum = sum + mark[i];
         }
-    }
-    static long average(long marks, int number) {
-        int sum = 0;
-        for (int i = 0; i < marks; i++) {
-            sum += marks;
-        }
-        sum /= number;
-        return sum;
-
+        avg = sum / 5;
+        System.out.print("Average Marks = " + avg);
     }
 }
