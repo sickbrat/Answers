@@ -9,7 +9,7 @@ public class Fact {
         System.out.print("Enter an Integer: ");
         int num = sd.nextInt();
 
-        System.out.println(Factorial(num));
+        System.out.println(num + "! is " + Factorial(num));
     }
     static int Factorial(int num) {
         int fact = 1;
