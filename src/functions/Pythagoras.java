@@ -3,7 +3,7 @@ package functions;
 public class Pythagoras {
     public static void main(String[] args) {
 
-        int[] ar = { 3, 1, 6, 5 };
+        int[] ar = {3, 1, 6, 5};
         int ar_size = ar.length;
         if (isTriplet(ar, ar_size))
             System.out.println("Yes");
