@@ -11,7 +11,7 @@ public class Prime_In_Range {
         System.out.print("Enter upper bound: ");
         int u = sc.nextInt();
 
-        System.out.print("Prime Numbers in given range is/are ");
+        System.out.print("Prime Numbers in defined range is/are ");
         for (int i = l; i <= u; i++) {
             if (in_Range(i))
                 System.out.print(i + " ");
