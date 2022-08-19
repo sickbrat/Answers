@@ -18,7 +18,6 @@ public class Prime_In_Range {
         }
     }
     static boolean in_Range(int n) {
-
         if (n < 2)
             return false;
         for (int i = 2; i < n; i++) {
