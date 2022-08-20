@@ -10,7 +10,7 @@ public class Concatenation_Array {
         System.out.println(Arrays.toString(concatenation(arr)));
     }
     static int[] concatenation(int[] numbs) {
-        int[] ans = new int[2 * numbs.length]; // Created an array named 'ans' which is twice the length of original array.
+        int[] ans = new int[2 * numbs.length]; // Created an array named 'ans' which is twice the length of 'numbs' array.
 
         for (int i = 0; i < numbs.length; i++) {
             ans[i] = numbs[i];
