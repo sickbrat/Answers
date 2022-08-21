@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Running_Sum {
     public static void main(String[] args) {
-        int[] arr = { 1,2,3,4 };
+        int[] arr = { 1, 2, 3, 4 };
         System.out.println(Arrays.toString(running(arr)));
     }
     static int[] running(int[] nums) {
