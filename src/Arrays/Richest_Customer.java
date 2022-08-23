@@ -10,7 +10,7 @@ public class Richest_Customer {
         };
         wealth(arr);
     }
-    static void wealth(int[][] accounts) {
+    static int wealth(int[][] accounts) {
         int maxi = Integer.MIN_VALUE;
 
         for (int[] account : accounts) {
@@ -20,5 +20,6 @@ public class Richest_Customer {
             }
             maxi = Math.max(maxi, sum);
         }
+        return maxi;
     }
 }
