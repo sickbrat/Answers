@@ -2,7 +2,6 @@ package Arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Target {
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class Target {
         System.out.println(Arrays.toString(createTargetArray(arr, nums)));
     }
     static int[] createTargetArray(int[] nums, int[] index) {
-        List<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         for (int i = 0; i < nums.length; i++) {
             list.add(index[i], nums[i]);
