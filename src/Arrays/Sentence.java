@@ -18,7 +18,7 @@ public class Sentence {
                 continue;
             yo[index] = true;
         }
-        for (int i = 0; i < 25; i++)
+        for (int i = 0; i < 26; i++)
             if (!yo[i])
                 return false;
 
