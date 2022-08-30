@@ -10,10 +10,10 @@ public class Matching_Rule {
     static int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int count = 0;
 
-        for (List<String> liat : items) {
-            if (ruleKey.equals("type") && ruleValue.equals(0)) count++;
-            else if (ruleKey.equals("color") && ruleValue.equals(1)) count++;
-            else if (ruleKey.equals("name") && ruleValue.equals(2)) count++;
+        for (List<String> list : items) {
+            if (ruleKey.equals("type") && ruleValue.equals(list.get(0))) count++;
+            else if (ruleKey.equals("color") && ruleValue.equals(list.get(1))) count++;
+            else if (ruleKey.equals("name") && ruleValue.equals(list.get(2))) count++;
         }
 
         return count;
