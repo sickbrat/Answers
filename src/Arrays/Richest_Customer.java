@@ -13,9 +13,11 @@ public class Richest_Customer {
     static int wealth(int[][] accounts) {
         int maxi = Integer.MIN_VALUE;
 
-        for (int[] account : accounts) {
+        for (int j = 0; j < accounts.length; j++) {
+            int[] account = accounts[j];
             int sum = 0;
-            for (int i : account) {
+            for (int k = 0; k < account.length; k++) {
+                int i = account[k];
                 sum += i;
             }
             maxi = Math.max(maxi, sum);
